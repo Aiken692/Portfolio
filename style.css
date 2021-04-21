@@ -98,9 +98,15 @@ html{
 /* home section styling */
 .home {
     display: flex;
-    background: url("walters.jpeg") black ;
+    /* background: url("walter.jpeg"); */
+    background-color: #283747;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*  */
     height: 100vh;
-    color: #fff;
+    color: whitesmoke;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
