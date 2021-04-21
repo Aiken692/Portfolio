@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -21,7 +24,7 @@
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: rgb(201, 120, 6);
 }
 .navbar .max-width{
     display: flex;
@@ -34,7 +37,7 @@
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: rgb(201, 120, 6);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -45,6 +48,7 @@
     display: inline-block;
 }
 .navbar .menu li a{
+    display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -52,7 +56,7 @@
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color:crimson;
+    color:rgb(201, 120, 6);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -65,13 +69,36 @@
     cursor: pointer;
     display: none;
 }
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(201, 120, 6);
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
 
 
 
 /* home section styling */
 .home {
     display: flex;
-    background: url("cristo.PNG") cadetblue;
+    background: url("walters.jpeg") black ;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -93,22 +120,22 @@
     margin: 5px 0;
 }
 .home .home-content .intro3 span{
-    color: crimson;
+    color: rgb(201, 120, 6);
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: rgb(201, 120, 6);
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid rgb(201, 120, 6);
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: rgb(201, 120, 6);
     background: none;
 }
 
@@ -116,12 +143,13 @@
 section{
     padding: 100px 0;
 }
-.about, .services, .skills, .teams{
+.about, .services, .skills, .teams .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
 .services .serv-content, 
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -151,7 +179,7 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: rgb(201, 120, 6);
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -181,25 +209,25 @@ section .title::after {
     margin-bottom: 10px ;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: rgb(201, 120, 6);
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: rgb(201, 120, 6);
     color: white;
     font-size: 20px;
     font-weight: 500;
     padding: 1px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid rgb(201, 120, 6);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: rgb(201, 120, 6);
     background: none;
 }
 /* Services section styling  */
@@ -226,7 +254,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: rgb(201, 120, 6);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -236,7 +264,7 @@ section .title::after {
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: rgb(201, 120, 6);
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -265,17 +293,17 @@ section .title::after {
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: rgb(201, 120, 6);
     color: #fff;
     font-size: 18px;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid rgb(201, 120, 6);
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: rgb(201, 120, 6);
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -302,7 +330,7 @@ section .title::after {
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: rgb(201, 120, 6);
 }
 .skills-content .right .html::before{
     width: 80%;
@@ -332,7 +360,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background: rgb(201, 120, 6);
 }
 .teams .carousel .card .box{
     display: flex;
@@ -354,7 +382,7 @@ section .title::after {
     width: 200px;
     object-fit: cover;
     border-radius: 30%;
-    border: 5px solid crimson;
+    border: 5px solid rgb(201, 120, 6);
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -370,7 +398,7 @@ section .title::after {
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid rgb(201, 120, 6)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -379,9 +407,113 @@ section .title::after {
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: rgb(201, 120, 6)!important;
 }
 
+/* contact section styling */
+.contact .title::after{
+    content: "Waiting for your call";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icon{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row .i{
+    font-size: 25px;
+    color: rgb(201, 120, 6);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row .sub-title{
+    color: #333  ;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 180px;
+}
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(201, 120, 6);
+    background: rgb(201, 120, 6);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: rgb(201, 120, 6);
+    background: none;
+}
+
+/* Footer section styling  */
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+footer span a {
+    color: rgb(201, 120, 6);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 
 /* responsive media query start */
 @media (max-width: 1300px){
@@ -459,7 +591,8 @@ section .title::after {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column,
+    .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }

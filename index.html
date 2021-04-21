@@ -7,23 +7,29 @@
     
     <link rel="stylesheet" href="style.css">
     
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up">
+
+        </i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Teams</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -37,7 +43,7 @@
             <div class="home-content">
                 <div class="intro1">Hello, My name is</div>
                 <div class="intro2">Ruganzu Walter</div>
-                <div class="intro3">And I'm a <span>Developer</span></div>
+                <div class="intro3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -52,7 +58,7 @@
                     <img src="walter.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Walter and I'm a<span> Developer</span></div>
+                    <div class="text">I'm Walter and I'm a <span class="typing-2"> </span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, deleniti ipsum. Aliquam, sequi quo culpa voluptatem mollitia saepe nostrum harum totam delectus est consequatur nihil, atque itaque minima a molestiae dolores vitae. A deleniti molestiae optio itaque ut, facilis labore odio ad suscipit impedit beatae accusamus quasi, repudiandae provident at laudantium eum enim, sapiente iste nesciunt neque in aliquam unde.</p>
                     <a href="#">Download CV</a>
                 </div>
@@ -67,7 +73,7 @@
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i> 
+                        <i class="fas fa-palette"></i>
                         <div class="text">Web Design</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque temporibus assumenda nisi, perferendis asperiores id?</p>
                     </div>
@@ -83,7 +89,7 @@
 
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-paint-brush"></i> 
+                        <i class="fas fa-file-invoice-dollar"></i> 
                         <div class="text">Tax, Audit & Accounting</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque temporibus assumenda nisi, perferendis asperiores id?</p>
                     </div>
@@ -163,8 +169,8 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="walter.jpeg" alt="">
-                        <div class="text">Christo</div>
+                        <img src="biko.jpeg" alt="">
+                        <div class="text">Biko Bitete</div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto temporibus obcaecati recusandae asperiores.</p>
                     </div>
                 </div>
@@ -180,6 +186,71 @@
     </section>
 
     <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Waiting for your call</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae at quisquam voluptates tempora.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Walter Ruganzu</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Nateete, Wakaliga</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">rwalter692@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field name">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            
+                        </div>
+
+                        <div class="field name">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section start -->
+    <footer>
+        <span>Designed by <a href="#">Walter Ruganzu</a> | <span class="far fa-copyright"></span> All rights reserved. </span>
+    </footer>
     
     <script src="script.js"></script>
 </body>
